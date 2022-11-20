@@ -1,0 +1,38 @@
+.todo-container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 2px 2px;
+  
+    h1 {
+      color: #4c4545;
+      font-size: 28px;
+    }
+    
+    .action {
+      position: relative;
+      .action-groups{
+        &--btns {
+          width: max-content;
+          display: flex;
+          gap: 0 15px;
+        }
+      }
+      
+    }
+    .loader-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 24px;
+    }
+
+    @media screen and (max-width:624px) {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
