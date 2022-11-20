@@ -66,14 +66,13 @@ const Todo = () => {
       <h1>ToDo List</h1>
       <div className="action">
         <div className="action-groups">
-        <Input handleChange={handleChange} value={newTask} empty={empty}/>
+        <Input handleChange={handleChange} value={newTask} empty={empty} handleKeyDown={handleAdd}/>
         <div className="action-groups--btns">
           <ButtonCustom buttonType={"add"} onClick={handleAdd}>
             ADD
           </ButtonCustom>
           <ButtonCustom buttonType={"deleteAll"} onClick={handleDeleteAll}>
-            {" "}
-            Delete All{" "}
+            Delete All
           </ButtonCustom>
         </div>
         </div>
